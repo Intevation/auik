@@ -34,7 +34,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           body: |
             Änderungen in diesem Release:
-            "Wir haben Fehler behoben, die Leistung gesteigert, den Müll runtergebracht und den Rasen gemäht – Zeit für ein Nickerchen"
+            "Test"
           draft: true
           prerelease: true
       - name: Upload Release Assets
