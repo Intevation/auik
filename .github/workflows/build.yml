@@ -21,3 +21,14 @@ jobs:
           path: target/auik_prod-v*-shaded.jar
           if-no-files-found: error
           archive: false
+      - shell: bash
+        run: |
+          TMPDIR=$(mktemp -d)
+          mv target/auik_prod-v*-shaded.jar "$TMPDIR"/auik.jar
+          jpackage --name auik --input "$TMPDIR" --main-jar auik.jar --main-class de.bielefeld.umweltamt.aui.AUIKataster
+          ls -l
+      - uses: actions/upload-artifact@v7
+        with:
+          path: auik*.exe
+          if-no-files-found: error
+          archive: false
