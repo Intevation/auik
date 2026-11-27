@@ -10,7 +10,7 @@
     <jasper.version>6.20.4</jasper.version>
     <log4j.version>2.20.0</log4j.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.release>11</maven.compiler.release>
+    <maven.compiler.release>25</maven.compiler.release>
   </properties>
   <dependencies>
     <!-- hibernate tools & dependencies-->
